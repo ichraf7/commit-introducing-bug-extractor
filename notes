@@ -1,0 +1,17 @@
+# ABOUT SZZ
+
+The  implementation of the SZZ algorithm provided in this repo https://github.com/wogscpar/SZZUnleashed -automatic!
+
+fetch_version_github is script for fetching issues that are close and labeled as bug 
+running :
+python3 fetch_version_github.py --repo_owner "REPOSITORY OWNER" --repo_name "PROJECT NAME"
+eg : python3 fetch_version_github.py --repo_owner eclipse --repo_name deeplearning4j
+
+filter_issue_bugzilla :
+filter the bugs reports fetched from bugzilla , in this script we choose to filter :
+	Component="Core" , Resolution="FIXED|RESOLVED" , Status="CLOSED|FIXED" 
+	some parameters depend on the project so it may that are named differently so feel free to adapted to your project 
+	the issues are ordered as described in szz algo paper in reverse chronological order
+
+fin_bug_fix_vbugzilla :this script is used to search for fix commit of issues host in bugzilla (because the format of csv file differt)
+
