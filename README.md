@@ -1,5 +1,4 @@
-# commit-introducing-bug-extractor
-
+#Extracting commits that introduced bugs
 
 ## ABOUT SZZ
 
